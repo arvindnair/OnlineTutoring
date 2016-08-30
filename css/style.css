@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    height:100%;
+    background-color: #787c7b;
+    padding: 50px;
+    background : -moz-linear-gradient(81.54% 123.33% 126.41deg,rgba(0, 191, 183, 1) 0%,rgba(0, 36, 100, 1) 100%);
+    background : -webkit-linear-gradient(126.41deg, rgba(0, 191, 183, 1) 0%, rgba(0, 36, 100, 1) 100%);
+    background : -webkit-gradient(linear,81.54% 123.33% ,18.46% -23.33% ,color-stop(0,rgba(0, 191, 183, 1) ),color-stop(1,rgba(0, 36, 100, 1) ));
+    background : -o-linear-gradient(126.41deg, rgba(0, 191, 183, 1) 0%, rgba(0, 36, 100, 1) 100%);
+    background : -ms-linear-gradient(126.41deg, rgba(0, 191, 183, 1) 0%, rgba(0, 36, 100, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BFB7', endColorstr='#002464' ,GradientType=0)";
+    background : linear-gradient(-36.41deg, rgba(0, 191, 183, 1) 0%, rgba(0, 36, 100, 1) 100%);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BFB7',endColorstr='#002464' , GradientType=1);
+
+}
+
+body {
+    font-family: Verdana;
+    font-weight: 900;
+
+}
+
+.login {
+    margin: 20px auto;
+    width: 300px;
+}
+
+.login-screen {
+    background-color: #303030;
+    border-radius : 5px 5px 5px 5px;
+    max-width: 380px;
+}
+
+.app-title {
+    text-align: center;
+    font-family: neosanslight, serif;
+    font-size : 24px;
+    color : #FFFFFF;
+}
+
+.app-title h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 0 0 0;
+    background-color: #404040;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.login-form {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+
+input {
+    text-align: center;
+    background-color: #4D4D4D;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 250px;
+    transition: border .5s;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-family: neosanslight, serif;
+}
+
+.textarea_feedback {
+    text-align: right;
+    position: relative;
+    bottom: 28px;
+    right: 5px;
+    color: #FFFFFF;
+    opacity: .2;
+
+}
+
+input:focus {
+    border: 2px solid #3498DB;
+    box-shadow: none;
+}
+
+.button-container div {
+    position: relative;
+    display: inline-block;
+    font-family: neosanslight, serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.button-container *{
+    vertical-align: middle;
+}
+
+.btn {
+    border: 2px solid transparent;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+}
+
+.btn.authenticate {
+    background: #4D4D4D url(img/iulogo.svg) no-repeat center;
+    background-size: 35px;
+    padding: 30px;
+    margin: 0 auto 0 15px;
+}
+
+.btn.general {
+    display: inline-block;
+    background-color: black;
+}
+
+#sendMessage, #loadMore {
+    vertical-align: middle;
+    position: relative;
+    bottom: 23px;
+    width:50%;
+    height: 40px;
+    color: #5A5251;
+    text-align: center;
+}
+
+#logout {
+    vertical-align: middle;
+    position: relative;
+    bottom: 23px;
+    width:100%;
+    background-color: black;
+    height: 40px;
+    color: #5A5251;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2980B9;
+}
+
+.login-link {
+    font: 12px "Verdana", Sans-Serif color : #444;
+    display: block;
+    margin-top: 12px;
+}
+#login-name {
+    height: 50px;
+    font-size: 15px;
+    color:#ffffff;
+}
+
+#wrong-password {
+    color: #FF0004;
+    font-size: 14px;
+
+}
+
+#chatContainer {
+    max-width: 410px;
+    max-height: 630px;
+    font-family: gabriel_sans_cond_lightRg, serif;
+}
+
+#chatContainer textarea {
+    width: 100%;
+    font-family: gabriel_sans_cond_lightRg, serif;
+    background-color: #333333;
+    resize: none;
+}
+
+#chatArea {
+    border: 2px solid transparent;
+    width: 100%;
+    height: 450px;
+    border-radius: 3px 3px 0 0;
+    overflow-y: auto;
+    overflow-width: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 20px;
+    background: #666666;
+}
+
+#chatArea span {
+    color: white;
+    background: #333;
+    padding: 4px 8px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 8px;
+    margin: 0 5px 0 0;
+}
+
+#chatArea p {
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 1px;
+
+
+}
+
+div.messageholder {
+    color:#ffffff;
+    display: inline-block;
+    font-family: gabriel_sans_cond_lightRg, serif;
+    width: 100%;
+}
+
+div.screenname {
+    font-family: gabriel_sans_cond_mediumRg, serif;
+    display: inline-block;
+    font-size: 20px;
+    width: 30%;
+    vertical-align: top;
+}
+
+div.messagecontent {
+    font-size: 18px;
+    display: inline-block;
+    width: 48%;
+}
+
+div.messagetime {
+    width: 22%;
+    display: inline-block;
+    vertical-align: top;
+    opacity: 0.4;
+}
+
+#nameLocation {
+    top: 12px;
+    right: 0;
+    color: white;
+    font: bold 12px "Verdana", Sans-Serif;
+}
+
+#nameLocation span {
+    color: #fa9f00;
+}
+
+#postMessageForm p {
+    float: left;
+    color: white;
+    padding-top: 27px;
+    font-size: 14px;
+}
+
+#message {
+    width: 100%;
+    height:70px;
+    padding: 10px;
+    color:#ffffff;
+    font-size: 18px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    opacity: .4;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    opacity:  .4;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    opacity:  .4;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    opacity: .4;
+}
+
+@font-face {
+    font-family: 'neosanslight';
+    src: url('fonts/neosans-light-webfont.eot');
+    src: url('fonts/neosans-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/neosans-light-webfont.woff2') format('woff2'),
+    url('fonts/neosans-light-webfont.woff') format('woff'),
+    url('fonts/neosans-light-webfont.ttf') format('truetype'),
+    url('fonts/neosans-light-webfont.svg#neotechregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gabriel_sans_cond_lightRg';
+    src: url('fonts/gabriel-sans-cond-light-webfont.eot');
+    src: url('fonts/gabriel-sans-cond-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/gabriel-sans-cond-light-webfont.woff2') format('woff2'),
+    url('fonts/gabriel-sans-cond-light-webfont.woff') format('woff'),
+    url('fonts/gabriel-sans-cond-light-webfont.ttf') format('truetype'),
+    url('fonts/gabriel-sans-cond-light-webfont.svg#gabriel_sans_cond_lightRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gabriel_sans_cond_mediumRg';
+    src: url('fonts/gabriel-sans-cond-medium-webfont.eot');
+    src: url('fonts/gabriel-sans-cond-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/gabriel-sans-cond-medium-webfont.woff2') format('woff2'),
+    url('fonts/gabriel-sans-cond-medium-webfont.woff') format('woff'),
+    url('fonts/gabriel-sans-cond-medium-webfont.ttf') format('truetype'),
+    url('fonts/gabriel-sans-cond-medium-webfont.svg#gabriel_sans_cond_mediumRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
